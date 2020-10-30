@@ -1,0 +1,16 @@
+{
+    "name": "user-pc/hundehuette",
+    "authors": [
+        {
+            "name": "bahdan.hal",
+            "email": "bahdan.hal@hotmail.com"
+        }
+    ],
+    "require": {},
+	"autoload":{
+		"psr-4":{
+			"Engine\\": "engine",
+			"Engine\\DI\\": "engine/DI"
+		}
+	}
+}
