@@ -1,0 +1,17 @@
+{
+    "name": "hundehuette",
+    "authors": [
+        {
+            "name": "Bahdan Hal"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Engine\\": "Engine",
+            "CMS\\": "CMS",
+            "Admin\\": "Admin",
+            "Engine\\DI\\": "Engine/DI"
+        }
+    }
+}
