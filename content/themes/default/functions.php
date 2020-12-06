@@ -7,6 +7,7 @@ Asset::css('vendor/font-awesome/css/font-awesome.min');
 
 // Add js scripts
 Asset::js('vendor/jquery/jquery.min');
+Asset::js('vendor/jquery/jquery-ui.min');
 Asset::js('vendor/bootstrap/js/bootstrap.min');
 Asset::js('js/jqBootstrapValidation');
 Asset::js('js/contact_me');

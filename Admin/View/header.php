@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 
     <!-- Redactor CSS -->
-    <link rel="stylesheet" href="/Admin/Assets/js/plugins/redactor/redactor.css">
+    <!--<link rel="stylesheet" href="/Admin/Assets/js/plugins/redactor/redactor.css">-->
 </head>
 <body>
 <header>
@@ -28,11 +28,11 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Hundehütte</a>
+            <a class="navbar-brand" href="/admin/">Hundehütte</a>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="/admin/">
                             <i class="icon-speedometer icons"></i>
                             <?= $lang->dashboardMenu['home'] ?>
                         </a>

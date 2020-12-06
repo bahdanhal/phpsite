@@ -31,12 +31,7 @@ class CMS
     public function run()
     {
         try {
-            if (ENV === 'CMS'){
-                require_once ROOT_DIR . '/' . ENV . '/Route.php';
-            }
-            else{
-                require_once ROOT_DIR . '/Route.php';
-            }
+            require_once ROOT_DIR . '/' . ENV . '/Route.php';
             $routerDispatch = $this->router->dispatch(Common::getMethod(), Common::getPathUrl());
 
             if ($routerDispatch == null) {

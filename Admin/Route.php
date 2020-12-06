@@ -20,11 +20,11 @@ $this->router->add('page-update', '/admin/page/update/', 'PageController:update'
 $this->router->add('posts', '/admin/posts/', 'PostController:listing');
 $this->router->add('post-create', '/admin/posts/create/', 'PostController:create');
 $this->router->add('post-edit', '/admin/posts/edit/(id:int)', 'PostController:edit');
+$this->router->add('page-add', '/admin/post/delete/(id:int)', 'PostController:delete');
 // Posts Routes (POST)
 $this->router->add('post-add', '/admin/post/add/', 'PostController:add', 'POST');
 $this->router->add('post-update', '/admin/post/update/', 'PostController:update', 'POST');
 
-$this->router->add('test', '/admin/test/', 'PostController:test', 'POST');
 
 // Settings Routes (GET)
 $this->router->add('settings-general', '/admin/settings/general/', 'SettingController:general');

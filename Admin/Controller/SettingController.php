@@ -22,8 +22,8 @@ class SettingController extends AdminController
 
     public function menus()
     {
-        $this->load->model('Menu', false, 'Cms');
-        $this->load->model('MenuItem', false, 'Cms');
+        $this->load->model('Menu', false, 'CMS');
+        $this->load->model('MenuItem', false, 'CMS');
         if($this->request->get){
             $this->data['menuId']   = $this->request->get['menu_id'];
         } else {
@@ -40,7 +40,7 @@ class SettingController extends AdminController
     {
         $params = $this->request->post;
 
-        $this->load->model('Menu', false, 'Cms');
+        $this->load->model('Menu', false, 'CMS');
 
         if (isset($params['name']) && strlen($params['name']) > 0) {
             $addMenu = $this->model->menu->add($params);
@@ -53,14 +53,14 @@ class SettingController extends AdminController
     {
         $params = $this->request->post;
 
-        $this->load->model('MenuItem', false, 'Cms');
+        $this->load->model('MenuItem', false, 'CMS');
 
         if (isset($params['menu_id']) && strlen($params['menu_id']) > 0) {
             $id = $this->model->menuItem->add($params);
 
             $item = new \stdClass;
             $item->id   = $id;
-            $item->name = \Cms\Model\MenuItem\MenuItemRepository::NEW_MENU_ITEM_NAME;
+            $item->name = \CMS\Model\MenuItem\MenuItemRepository::NEW_MENU_ITEM_NAME;
             $item->link = '#';
 
             Theme::block('setting/menu_item', [
@@ -73,7 +73,7 @@ class SettingController extends AdminController
     {
         $params = $this->request->post;
 
-        $this->load->model('MenuItem', false, 'Cms');
+        $this->load->model('MenuItem', false, 'CMS');
 
         if (isset($params['data']) && !empty($params['data'])) {
             $sortItem = $this->model->menuItem->sort($params);
@@ -84,7 +84,7 @@ class SettingController extends AdminController
     {
         $params = $this->request->post;
 
-        $this->load->model('MenuItem', false, 'Cms');
+        $this->load->model('MenuItem', false, 'CMS');
 
         if (isset($params['item_id']) && strlen($params['item_id']) > 0) {
             $removeItem = $this->model->menuItem->remove($params['item_id']);

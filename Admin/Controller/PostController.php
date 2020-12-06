@@ -38,6 +38,15 @@ class PostController extends AdminController
         }
     }
 
+    public function delete($id)
+    {
+        $this->load->model('Post');
+        if (isset($id)){
+            $this->model->post->deletePost($id);
+        }
+        header('Location: /admin/posts/');
+    }
+
     public function update()
     {
         $this->load->model('Post');
@@ -50,16 +59,4 @@ class PostController extends AdminController
         }
     }
 
-    public function test()
-    {
-       
-          $uploadfile = __DIR__ . '/'. basename($_FILES['pic']['name']);
-echo '<pre>';
-if (move_uploaded_file($_FILES['pic']['tmp_name'], $uploadfile)) {
-    echo "a.\n";
-} else {
-    echo "b\n";
-}
-print_r($_FILES);
-    }
 }

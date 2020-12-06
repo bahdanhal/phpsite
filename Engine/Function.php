@@ -8,11 +8,8 @@
  */
 function path($section)
 {
-    $pathMask = ROOT_DIR . DS . '%s';
-
-    if (ENV == 'CMS') {
-        $pathMask = ROOT_DIR . DS . ENV. DS . '%s';
-    }
+    $pathMask = ROOT_DIR . DS . ENV. DS . '%s';
+    
 
     // Return path to correct section.
     switch (strtolower($section))

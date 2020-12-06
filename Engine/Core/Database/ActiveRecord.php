@@ -58,6 +58,20 @@ trait ActiveRecord
         return isset($find[0]) ? $find[0] : null;
     }
 
+    public function delete()
+    {
+        $deleted = $this->db->query(
+            $this->queryBuilder
+                ->delete()
+                ->from($this->getTable())
+                ->where('id', $this->id)
+                ->sql(),
+            $this->queryBuilder->values
+        );
+
+        return $deleted;
+    }
+
     /**
      *  Save something
      */

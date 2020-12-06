@@ -20,6 +20,8 @@ class Post
     
     public $date;
     
+    public $image;
+    
     /**
      * @return mixed
      */
@@ -96,5 +98,21 @@ class Post
     public function setDate($date)
     {
         $this->date = $date;
+    }
+
+    /**
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+    
+    /**
+     * @param string $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
     }
 }

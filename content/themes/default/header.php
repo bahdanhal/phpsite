@@ -32,7 +32,7 @@
                 <span class="sr-only">Toggle navigation</span>
                 Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
                 <?php echo Setting::get('name_site'); ?>
             </a>
         </div>

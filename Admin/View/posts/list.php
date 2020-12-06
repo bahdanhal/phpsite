@@ -17,6 +17,7 @@
                     <th>#</th>
                     <th>Title</th>
                     <th>Date</th>
+                    <th> </th>
                 </tr>
                 </thead>
                 <tbody>
@@ -32,6 +33,11 @@
                         </td>
                         <td>
                             <?= $post->date ?>
+                        </td>
+                        <td>
+                            <a href="/admin/post/delete/<?= $post->id ?>">
+                                Delete
+                            </a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
