@@ -14,6 +14,8 @@
 
 ### 1. Введение <a name="1"></a>
 В данном документе описаны функциональные и нефункциональные требования к [веб-приложению ](https://github.com/bahdanhal/phpsite). Веб-приложение предназначено для широкого круга пользователей. 
+* [Модуль администратора](https://github.com/bahdanhal/phpsite/tree/main/mockups/admin).
+* [Модуль пользователя](https://github.com/bahdanhal/phpsite/tree/main/mockups/user).
 
 ## 2. Требования пользователя <a name="2"></a>
 
